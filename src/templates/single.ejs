@@ -1,0 +1,105 @@
+<% include ../partials/head %> <% include ../partials/header %>
+<div class="site"></div>
+
+<img src="../../assets/images/relocation_banner.png" alt="" class="reklame" />
+
+<section class="produkt__contaner">
+  <figure class="imgTemplate"></figure>
+  <section class="contaner__section"></section>
+  <section class="descriotion"></section>
+  <div class="contaner__info"></div>
+</section>
+
+<% include ../partials/footer %> <% include ../partials/after-footer %>
+
+
+<script src="/assets/javascript/single.js"></script>
+
+<template id="product-imgTemplate">
+  <img
+    src="../../assets/images/produktbilleder/effektforstaerkere/manley_mahi.jpg"
+    alt=""
+    class="contaner__bigimg"
+  />
+  <img
+    src="../../assets/images/produktbilleder/effektforstaerkere/manley_mahi.jpg"
+    alt=""
+    class="contaner__smallimg"
+  />
+  <img
+    src="../../assets/images/produktbilleder/effektforstaerkere/manley_mahi.jpg"
+    alt=""
+    class="contaner__smallimg"
+  />
+</template>
+
+<template id="product-infoTemplate">
+    <h2 class="section__h2"></h2>
+      <div class="section__prize">
+        <h4 class="product_make"></h4>
+        <h3 class="prize__now"></h3>
+      </div>
+      <p class="product_description"></p>
+      <div>
+        <button class="section__button">Ask a question</button>
+        <button class="section__button">Part exchange</button>
+        <button class="section__button">Pay by finace</button>
+        <button class="section__button">seen a better pice?</button>
+      </div>
+      <section class="section__atc">
+        <div class="atc__top">
+          <div class="top__div">
+            <p class="top__p">Finish*</p>
+          </div>
+          <div class="labels">
+            <label
+              >Black<input type="radio" checked="checked" name="radio"
+            /></label>
+            <label>Sliver<input type="radio" name="radio"/></label>
+          </div>
+        </div>
+        <div class="atc__bottom">
+          <div class="bottom__qty">
+            <label
+              >Qty<input type="number" name="quantity" min="1" max="5" value="1"
+            /></label>
+            <Button class="qty__add">Add to cart</Button>
+          </div>
+          <p>-OR-</p>
+          <img src="../../assets/images/Paypal.gif" alt="" />
+        </div>
+        <h3>Additional information</h3>
+        <table class="table">
+          <tr class="table__tr">
+            <th class="tr__th-right">Manufacrurer</th>
+            <th class="tr__th"><span class="table_Manufacrurer"></span></th>
+          </tr>
+          <tr class="table__tr">
+            <th class="tr__th-right">Manufacturer link</th>
+            <th class="tr__th"><span class="table_Manufacturerlink"></span></th>
+          </tr>
+          <tr class="table__tr">
+            <th class="tr__th-right">Free warranty</th>
+            <th class="tr__th">3 years</th>
+          </tr>
+          <tr class="table__tr">
+            <th class="tr__th-right">Delivery charge</th>
+            <th class="tr__th">Free</th>
+          </tr>
+          <tr class="table__tr">
+            <th class="tr__th-right">Delivery time</th>
+            <th class="tr__th">1 - 5 Working Days</th>
+          </tr>
+          <tr class="table__tr">
+            <th class="tr__th-right">Card surcharges</th>
+            <th class="tr__th">No</th>
+          </tr>
+        </table>
+      </section>
+    </section>
+  </template>
+
+  <template id="descriotion_template">
+      <h3>DESCRIPTION</h3>
+      <p class="descriotion_text"></p>
+  </template>
